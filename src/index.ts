@@ -1,22 +1,3 @@
-# Ebuilder-Quick-Start
-
-一个简单的ebuilder应用
-
-### 组件基本代码
-``` html
-<!-- html  -->
-
-<ebuilder-test></ebuilder-test>
-	
-<script>
-    if( !window.customElements ){
-        document.write('<script src="https://raw.githubusercontent.com/kimchen003/ebuilder/master/polyfill/dist/index.js"><\/script>');
-    }
-</script>
-```
-
-``` ts
-// ts
 import { WebComponent, html, render } from 'ebuilder';
 const StyleSheet = require('./ebuilder-test.less');
 
@@ -52,16 +33,3 @@ export default class EbuilderTest extends WebComponent {
 }
 
 customElements.define("ebuilder-test", EbuilderTest );
-```
-
-```
-### 安装依赖运行
-```
-yarn install
-yarn start
-```
-
-### 发布
-```
-yarn build
-```
