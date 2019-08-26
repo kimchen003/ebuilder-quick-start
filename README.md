@@ -15,7 +15,7 @@
 </script>
 ```
 
-``` ts
+``` js
 // ts
 import { WebComponent, html, render } from 'ebuilder';
 const StyleSheet = require('./ebuilder-test.less');
@@ -54,7 +54,6 @@ export default class EbuilderTest extends WebComponent {
 customElements.define("ebuilder-test", EbuilderTest );
 ```
 
-```
 ### 安装依赖运行
 ```
 yarn install
